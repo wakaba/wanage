@@ -12,6 +12,9 @@
    "jobs" : {
       "include" : [
          {
+            "stage" : "test"
+         },
+         {
             "before_install" : "true",
             "install" : "true",
             "script" : "curl -f https://gist.githubusercontent.com/wakaba/ab553f86cd017e0cb28c6dbb5364b009/raw/travis-merge-job.pl | perl",
@@ -32,7 +35,7 @@
       }
    },
    "perl" : [
-      "5.26",
+      "5.32",
       "5.14",
       "5.8"
    ],
